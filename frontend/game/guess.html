@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a Number</title>
+    <link rel="stylesheet" href="guess.css">
+    <script src="guess.js" defer></script>
+</head>
+
+<body>
+    <div class="game-wrapper">
+        <!-- Main Guess Container -->
+        <div class="guess-container">
+            <h1>Guess a Number</h1>
+            <p id="rangeMessage">Choose a number from (range1) to (range2)</p>
+            <p id="remainingGuesses">Remaining guesses: 10</p>
+            <input type="number" id="guessInput" class="input-field" placeholder="Enter your guess">
+            <button id="guessButton" class="guess-btn">Guess</button>
+            <p id="feedbackMessage" class="feedback"></p>
+        </div>
+
+        <!-- Guess History Container -->
+        <div class="guess-history">
+            <h3>Guess History</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Game Content -->
+    <div id="gameContent" class="hidden">
+        <div class="game-container">
+            <h1>Number Guessing Game</h1>
+            <div class="scoreboard">
+                <h3>Scoreboard</h3>
+                <div id="scoreboardContent"></div>
+                <div class="ratio-bar">
+                    <div id="lossBar"></div>
+                    <div id="winBar"></div>
+                </div>
+                <div class="ratio-labels">
+                    <span>Losses</span>
+                    <span>Wins</span>
+                </div>
+            </div>
+            <div class="difficulty">
+                <label for="difficulty">Select a difficulty</label>
+                <select id="difficulty">
+                    <option value="easy">Easy (1-10)</option>
+                    <option value="medium">Medium (1-100)</option>
+                    <option value="hard">Hard (1-1000)</option>
+                </select>
+            </div>
+            <button id="startButton" class="start-btn">Start</button>
+        </div>
+    </div>
+</body>
+
+</html>

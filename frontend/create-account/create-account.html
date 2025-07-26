@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="create-account.css">
+    <script src="create-account.js" defer></script>
+</head>
+<body>
+    <div class="account-container">
+        <h1>Create an Account</h1>
+        <div id="createAccountMessage" class="message"></div>
+        <form id="createAccountForm">
+            <input type="text" id="newUsername" placeholder="Username" class="input-field" required>
+            <input type="password" id="newPassword" placeholder="Password" class="input-field" required>
+            <button type="submit" class="continue-btn">Continue</button>
+        </form>
+        <a href="/login">
+            <button type="button" class="continue-btn">Return to Login</button>
+        </a>
+        <footer>
+            <p>© Manan K, Gulsen K, Mohammad J</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/* General body styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* Wrapper to hold the game and history board */
+
+.game-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+/* Main guess container styling */
+
+.guess-container {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.guess-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.guess-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Feedback message styling */
+
+.feedback {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/* Guess history container */
+
+.guess-history {
+    background-color: #f9f9f9;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 14px;
+}
+
+.guess-history h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+
+/* History list styling */
+
+#historyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    /* Scroll if guesses exceed the available space */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#historyList li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#historyList li:last-child {
+    border-bottom: none;
+}
+
+
+/* Scrollbar for guess history */
+
+#historyList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#historyList::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+#historyList::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
