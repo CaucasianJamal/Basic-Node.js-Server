@@ -1,6 +1,6 @@
 # Getting Started:
 
-This github repository is a very rudimentary, extrememly simple proof of concept for my skills in node.js and web handling. Attached is a number guessing game, whereby a random number will be generated and the user will attempt to correctly guess it.
+This github repository is a very rudimentary, extrememly simple proof of concept for our skills in node.js and web handling. Attached is a number guessing game, whereby a random number will be generated and the user will attempt to correctly guess it.
 
 ## Requirements:
 - [Node.js](https://nodejs.org/en)
